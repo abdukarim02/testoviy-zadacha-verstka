@@ -1,0 +1,130 @@
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/ 
+$font-family: "FS Elliot Pro", sans-serif;
+$second-family: "Lisboa Pro", sans-serif;
+$third-family: "Lisboa Heavy", sans-serif;
+$font3: "Faber Sans Pro", sans-serif;
+$font4: "Roboto", sans-serif;
+$font5: "Jost", sans-serif;
+@font-face {
+    font-family: 'FS Elliot Pro';
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/FS\ Elliot\ ProBoldItalic.otf);
+}
+@font-face {
+    font-family: 'FS Elliot Pro';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/FS\ Elliot\ ProRegular.otf);
+}
+@font-face {
+    font-family: 'Lisboa Heavy';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Lisboa.woff2 );
+}
+@mixin stylefontz($ff, $fw, $fs, $c){
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    color: $c;
+}
+@mixin stylcenter($d, $ai, $jc){
+    display: $d;
+    align-items: $ai;
+    justify-content: $jc;
+}
+.container {
+    max-width: 1235px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.title {
+    @include stylefontz($third-family, 700, 36px, #2b2b2b);
+}
+.text {
+    @include stylefontz($font-family, 400, 18px, #2b2b2b);
+    line-height: 167%;
+}
+.main {
+    padding-top: 30.83px;
+    position: relative;
+    background: #f8f8f8;
+	&__content {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        @include stylcenter(flex, center, space-between);
+	}
+	&__content-info {
+        max-width: 515px;
+        margin: 0 auto;
+	}
+	&__info-title {
+        line-height: 94px;
+	}
+	&__info-text {
+        width: 515px;
+	}
+	&__bg {
+        width: 745px;
+        height: 555px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+	}
+}
+.advantages {
+    padding: 52px 0 70px;
+		&__content-title {
+            margin-bottom: 72px;
+            text-align: center;
+		}
+		&__content-wrap {
+            @include stylcenter(flex, center, space-between);
+            flex-wrap: wrap;
+		}
+		&__wrap-flex {
+            max-width: 27%;
+		}
+		&__flex-header {
+            @include stylcenter(flex, center, space-between);
+		}
+		&__header-logo {
+            width: 60px;
+            height: 50px;
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+		}
+		&__header-title {
+            width: 155px;
+            @include stylefontz($font-family, 700, 20px, #2b2b2b);
+            line-height: 135%;
+		}
+		&__flex-info {
+             @include stylefontz($font-family, 400, 14px,  #7e7e7e);
+             line-height: 171%;
+             margin-top: 25px;
+		}
+}

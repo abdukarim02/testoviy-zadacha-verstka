@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "FS Elliot Pro";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/FS\ Elliot\ ProBoldItalic.otf);
+}
+@font-face {
+  font-family: "FS Elliot Pro";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/FS\ Elliot\ ProRegular.otf);
+}
+@font-face {
+  font-family: "Lisboa Heavy";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Lisboa.woff2);
+}
+.container {
+  max-width: 1235px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: "Lisboa Heavy", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #2b2b2b;
+}
+
+.text {
+  font-family: "FS Elliot Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #2b2b2b;
+  line-height: 167%;
+}
+
+.main {
+  padding-top: 30.83px;
+  position: relative;
+  background: #f8f8f8;
+}
+.main__content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__content-info {
+  max-width: 515px;
+  margin: 0 auto;
+}
+.main__info-title {
+  line-height: 94px;
+}
+.main__info-text {
+  width: 515px;
+}
+.main__bg {
+  width: 745px;
+  height: 555px;
+}
+.main__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.advantages {
+  padding: 52px 0 70px;
+}
+.advantages__content-title {
+  margin-bottom: 72px;
+  text-align: center;
+}
+.advantages__content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages__wrap-flex {
+  max-width: 27%;
+}
+.advantages__flex-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.advantages__header-logo {
+  width: 60px;
+  height: 50px;
+}
+.advantages__header-logo svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.advantages__header-title {
+  width: 155px;
+  font-family: "FS Elliot Pro", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #2b2b2b;
+  line-height: 135%;
+}
+.advantages__flex-info {
+  font-family: "FS Elliot Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 171%;
+  margin-top: 25px;
+}/*# sourceMappingURL=style.css.map */
