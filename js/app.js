@@ -12,3 +12,17 @@ buttons.forEach((btn) => {
     document.getElementById(btn.dataset.tab).classList.add("active");
   });
 });
+var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 50,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      history: {
+        key: "slide",
+      },
+});

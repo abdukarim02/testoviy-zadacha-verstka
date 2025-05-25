@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   src: url(../fonts/Lisboa.woff2);
 }
+body {
+  background: #f8f8f8;
+}
+
 .container {
   max-width: 1235px;
   margin: 0 auto;
@@ -144,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .advantages {
+  background: #fff;
   padding: 52px 0 70px;
 }
 .advantages__content-title {
@@ -189,4 +194,123 @@ h1, h2, h3, h4, h5, h6 {
   color: #7e7e7e;
   line-height: 171%;
   margin-top: 25px;
+}
+
+.directions {
+  padding: 52px 0 70px;
+}
+.directions__content-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.directions__content-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.directions-tabs__buttons {
+  height: 336px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 20%;
+}
+.directions-buttons__btn {
+  width: 100%;
+  font-family: "FS Elliot Pro", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #7e7e7e;
+  padding: 10px;
+  background: transparent;
+}
+.directions-buttons__btn.active {
+  background: #fff;
+  font-weight: 400;
+  color: #2b2b2b;
+}
+.directions-tabs__content {
+  width: 80%;
+  height: 100%;
+  background: #fff;
+}
+.directions-content__flex {
+  padding: 10px 0;
+  height: 100%;
+  height: 336px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+}
+.directions-flex__item {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.directions-item__list {
+  font-family: "FS Elliot Pro", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #7e7e7e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 36px;
+  cursor: pointer;
+}
+
+.schools {
+  padding: 52px 0 70px;
+}
+.schools__content-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.schools__content-swiper {
+  position: relative;
+}
+.schools .swiper-slide {
+  position: relative;
+  border-radius: 5px;
+  width: 287px;
+  height: 220px;
+  box-shadow: 0 4px 26px 0 rgba(203, 203, 203, 0.25);
+  background: #fff;
+}
+.schools .swiper-button-prev,
+.schools .swiper-button-next {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 15px;
+  border-radius: 100px;
+  background: #01e45c;
+}
+.schools .swiper-button-prev::after,
+.schools .swiper-button-next::after {
+  display: none;
+}
+.schools .swiper-pagination {
+  bottom: -35px;
+}
+.schools .swiper-pagination-bullet-active {
+  background: #01e45c !important;
+}
+.schools__swiper-logo {
+  width: 159px;
+  height: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.schools__swiper-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
